@@ -1,0 +1,84 @@
+# 42 Exam Rank 03 - Ejercicios Level 1 y Level 2
+
+Este repo contiene la recopilación estructurada de los ejercicios típicos de los niveles 1 y 2 del examen Rank 03 de 42/1337, incluyendo los enunciados originales (`subject.txt`) y el esqueleto base de cada ejercicio.
+
+---
+
+## Nivel 1
+
+### 1. filter
+- **Objetivo:** Recibe una cadena `s` como argumento. Lee de stdin y escribe en stdout, pero cada ocurrencia de `s` la reemplaza por asteriscos (`*`).
+- **Salida:** El texto leído, con las ocurrencias de `s` sustituidas por `*`.
+- **Técnica:** Manipulación de strings, búsqueda y reemplazo, lectura bufferizada.
+- **Temas:** Strings, stdin/stdout, manejo de memoria, errores de sistema.
+- **Funciones permitidas:** `read`, `strlen`, `malloc`, `calloc`, `realloc`, `free`, `printf`, `perror`
+- **Tipo:** Programa completo (con `main` propio, ejecutable).
+
+### 2. ft_scanf
+- **Objetivo:** Implementar una función `ft_scanf(const char *, ...)` que simula scanf, soportando solo `%s`, `%d` y `%c`.
+- **Salida:** Número de conversiones exitosas.
+- **Técnica:** Parseo manual de input con `fgetc`, `ungetc`, y manejo de argumentos variables (`va_list`).
+- **Temas:** Entrada estándar, parsing, argumentos variables, tipos básicos.
+- **Funciones permitidas:** `fgetc`, `ungetc`, `ferror`, `feof`, `isspace`, `isdigit`, `stdin`, `va_start`, `va_arg`, `va_copy`, `va_end`
+- **Tipo:** Solo la función/código, ellos prueban con su propio main.
+
+### 3. broken_gnl
+- **Objetivo:** Reparar la función `get_next_line(int fd)` en el archivo proporcionado, para que devuelva la siguiente línea (incluyendo `\n` si existe) de un descriptor de archivo en cada llamada.
+- **Salida:** String con la línea leída, o `NULL` si no hay más.
+- **Técnica:** Lectura bufferizada, gestión de memoria y buffers estáticos/dinámicos, usando solo las funciones permitidas.
+- **Temas:** Archivos, lectura por bloques, manejo de memoria.
+- **Funciones permitidas:**  
+  `read`, `malloc`, `free`
+- **Tipo:** Solo debes reparar la función/código en los archivos indicados. El equipo evaluador probará con su propio main.
+
+---
+
+## Nivel 2
+
+### 1. tsp (Traveling Salesman Problem)
+- **Objetivo:** Leer coordenadas de ciudades desde stdin y calcular la longitud mínima del camino cerrado que pasa por todas las ciudades una sola vez.
+- **Salida:** La longitud mínima, con dos decimales.
+- **Técnica:** Fuerza bruta con backtracking/permutaciones (no más de 11 ciudades).
+- **Temas:** Recorridos de grafos, permutaciones, cálculo de distancias.
+- **Funciones permitidas:** `write`, `sqrtf`, `getline`, `fseek`, `fscanf`, `ferror`, `feof`, `fabsf`, `memcpy`, `fprintf`, `fclose`, `malloc`, `calloc`, `realloc`, `free`, `fopen`, `errno`, `stderr`, `stdin`, `stdout`
+- **Tipo:** Programa completo (con `main` propio, ejecutable).
+
+### 2. rip
+- **Objetivo:** Recibe una string de paréntesis. Si está desbalanceada, elimina (poniendo espacios) el mínimo número de paréntesis para que quede balanceada y muestra todas las soluciones posibles.
+- **Salida:** Todas las variantes válidas posibles (una por línea).
+- **Técnica:** Recursividad y backtracking probando quitar cada paréntesis.
+- **Temas:** Strings, recursión, balance de paréntesis.
+- **Funciones permitidas:** `puts`, `write`
+- **Tipo:** Programa completo (con `main` propio, ejecutable).
+
+### 3. permutations
+- **Objetivo:** Imprime todas las permutaciones de los caracteres de la string recibida por argumento, en orden alfabético.
+- **Salida:** Cada permutación en una línea.
+- **Técnica:** Backtracking recursivo con swaps y revertiendo, con ordenación previa.
+- **Temas:** Recursividad, generación de permutaciones, ordenación.
+- **Funciones permitidas:** `puts`, `malloc`, `calloc`, `realloc`, `free`, `write`
+- **Tipo:** Programa completo (con `main` propio, ejecutable).
+
+### 4. n_queens
+- **Objetivo:** Imprime todas las soluciones para colocar N reinas en un tablero NxN sin que se ataquen entre sí.
+- **Salida:** Cada solución es una línea de índices (posición de la reina en cada columna).
+- **Técnica:** Backtracking profundo probando todas las posiciones posibles.
+- **Temas:** Recursividad, búsqueda en espacio de soluciones, combinatoria.
+- **Funciones permitidas:** `atoi`, `fprintf`, `write`
+- **Tipo:** Programa completo (con `main` propio, ejecutable).
+
+### 5. powerset
+- **Objetivo:** Recibe un número n y una lista de enteros. Imprime todos los subconjuntos cuya suma es n.
+- **Salida:** Cada subconjunto válido en una línea, en orden de entrada.
+- **Técnica:** Backtracking recursivo para probar todas las combinaciones posibles.
+- **Temas:** Subconjuntos, suma de subconjuntos, recursividad.
+- **Funciones permitidas:** `atoi`, `printf`, `malloc`, `calloc`, `realloc`, `free`
+- **Tipo:** Programa completo (con `main` propio, ejecutable).
+
+---
+
+Cada carpeta de cada ejercicio contiene:
+- `subject.txt` (enunciado original).
+- `*.c` (esqueleto base para empezar).
+
+¡Listo para practicar!
