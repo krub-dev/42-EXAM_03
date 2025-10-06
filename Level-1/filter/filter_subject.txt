@@ -40,6 +40,10 @@ $> echo 'ababcabababc' | ./filter ababc | cat -e
 *****ab*****$
 $>
 
+./filter ababc
+> ababcaaabbc
+Resultado -> *****aaabbc
+
 NOTES:
 memmem includes:
                 #define _GNU_SOURCE
