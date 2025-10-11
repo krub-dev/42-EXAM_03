@@ -1,0 +1,61 @@
+# Archivos ejecutables
+a.out
+*.out
+*.exe
+
+# Archivos objeto y bibliotecas
+*.o
+*.a
+*.so
+*.dylib
+*.gch
+
+# Archivos de depuración
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# Archivos temporales del sistema
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*~
+*.swp
+*.swo
+
+# Archivos de prueba (pero NO los subjects)
+test.txt
+test*.txt
+
+# Archivos de Valgrind
+vgcore.*
+*.log
+
+# Archivos del IDE
+.vscode/
+.idea/
+*.sublime-*
+
+# Archivos de compilación
+*.d
+*.pch
+
+# Directorios de salida
+bin/
+build/
+dist/
+out/
+
+# Core dumps
+core
+core.*
+
+# Archivos temporales de edición
+*.bak
+*.tmp
+*~

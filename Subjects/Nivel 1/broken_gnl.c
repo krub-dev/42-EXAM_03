@@ -1,4 +1,4 @@
-#include "broken_gnl.h"
+#include "get_next_line.h"
 
 char *ft_strchr(char *s, int c)
 {
@@ -84,33 +84,4 @@ char *get_next_line(int fd)
         return NULL;
     }
     return ret;
-}
-
-int main(int argc, char **argv){
-
-	int fd;
-	char buffer[1000];
-
-	fd = open("test.txt", O_RDONLY);
-//	get_next_line(fd);
-	//if (argc != 2)
-	//	return 1;
-
-//	buffer = get_next_line(fd);
-	while (fd)
-	{
-		buffer = get_next_line(fd);
-		if (buffer == NULL)
-		{
-			close(fd);
-			break ;
-		}
-		else
-			printf("%s", buffer);
-
-
-	}
-
-
-	return 0;
 }
