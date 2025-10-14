@@ -4,8 +4,6 @@
 #include <string.h>
 #include <unistd.h>
 
-
-
 /*char *filter(char *str_Tofilter, char* s, size_t pos)
 {
 	size_t i = 0;
